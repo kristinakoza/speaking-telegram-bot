@@ -5,7 +5,7 @@ import logging
 import sqlite3
 
 
-ADMIN_IDS = [1093135523]  # admin ID
+ADMIN_IDS = [#secret]  # admin ID
 
 
 FEEDBACK, APPROVE_FEEDBACK, REJECT_FEEDBACK, REDO_FEEDBACK = range(4)
@@ -148,7 +148,7 @@ async def view_subs_callback(update: Update, context: ContextTypes.DEFAULT_TYPE)
 async def admin_help(update: Update, context: ContextTypes.DEFAULT_TYPE):
     if not is_admin(update):
         return
-    
+   #ITS NOT FULL ILL UPDATE IT LATER I PROMISE!  
     help_text = (
         "<b>🛠️ Admin Commands</b>\n\n"
         "<b>👥 User Management</b>\n"
