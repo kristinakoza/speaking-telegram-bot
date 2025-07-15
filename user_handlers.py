@@ -301,7 +301,7 @@ async def handle_suggested_reply(update: Update, context: ContextTypes.DEFAULT_T
         f"Your response: {response}",
         reply_markup=InlineKeyboardMarkup(keyboard))
     
-    admin_ids = [1093135523]  
+    admin_ids = [#SECRET]  
     for admin_id in admin_ids:
         try:
             await context.bot.send_message(
@@ -422,7 +422,7 @@ async def submit_voice(update: Update, context: ContextTypes.DEFAULT_TYPE, user)
     )
 
     # Notify admin
-    admin_ids = [1093135523]
+    admin_ids = [#SECRET]
     for admin_id in admin_ids:
         try:
             await context.bot.send_message(
